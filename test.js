@@ -1,3 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('hey pleb');
+  chrome.storage.sync.set({ color: '#3aa757' }, () => {
+    console.log('hey pleb');
+  })
 })
